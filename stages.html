@@ -2,81 +2,162 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Portfolio BTS SIO | Noémie Dupuis</title>
-
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-        <link rel="stylesheet" href="styles.css">
-
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/utility.css">
+        <link rel = "stylesheet" href = "styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
 
     <body>
 
-        <header>
-            <h2><a href="index.html">BTS SIO</a></h2>
-            <nav>
-
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="profil.html">Profil</a></li>
-                <li><a href="bts.html">BTS SIO</a></li>
-                <li><a href="stages.html">Stages</a></li>
-                <li><a href="veille.html">Veille technologique</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        <!-- navbar section -->
+        <nav class = "navbar">
+            <div class = "container">
+                <div class = "brand-and-toggler">
+                    <a href = "index.html" class = "navbar-brand">Noémie DUPUIS</a>
+                    <button type = "button" class = "navbar-toggler" id = "navbar-toggler">
+                    <span>
+                        <i class = "fas fa-bars"></i>
+                    </span>
+                    </button>
+                </div>
         
-            </nav>
-        </header>
+                <div class = "navbar-collapse">
+                    <ul class = "navbar-nav">
+                    <li class = "nav-item">
+                        <a href = "index.html" class = "nav-link"><b>ACCUEIL</b></a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "profil.html" class = "nav-link"><b>PROFIL</b></a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "stages.html" class = "nav-link"><b>STAGES</b></a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "veille.html" class = "nav-link"><b>VEILLE TECHNOLOGIQUE</b></a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href = "contact.html" class = "nav-link"><b>CONTACT</b></a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar section -->
 
-        <section class="hero">
-            <div class="background-image" style="background-image: url(fond.png);"></div>
-            <h1>Noémie Dupuis</h1>
-            <h3>Portfolio</h3>
-        </section>
         
-        <section class="our-work">
-            <h3 class="title">Stages</h3>
-            <h4>Stages de 1e et 2e année du BTS SIO</h4>
-            <p>J'ai effectué mes deux stages dans la même entreprise : COM&COMPANY</p>
-            <hr>
-        </section>
+        <!-- resume page -->
+        <section class = "resume container">
+            <div class = "title">
+                <h2>stages</h2>
+                <div>
+                  <h2>stages</h2>
+                </div>
+            </div>
+      
+            <br><br><br>
+            <div class = "title">
+                <div>
+                    <h3><b>Stages de 1e et 2e année du BTS SIO</b></h3>
+                </div>
+            </div>
+            <p class = "text">J'ai effectué mes deux stages dans la même entreprise : COM&COMPANY</p>
 
-        <section class="features">
-            <h3 class="title">Contexte de l'entreprise</h3>
-            <hr>
-            <p>
+            <br><br><br>
+            <div class = "title">
+                <h2>COM&COMPANY</h2>
+                <div>
+                  <h2>COM&COMPANY</h2>
+                </div>
+            </div>
+
+            <br><br><br>
+            <div class = "title">
+                <div>
+                    <h3><b>Contexte de l'entreprise</b></h3>
+                </div>
+            </div>
+            <p class = "text">
                 COM&COMPANY est une entreprise du secteur tertiaire de communication. 
                 Elle appartient au groupe Valeur et Capital, une entreprise de gestion de patrimoine immobilier.
             </p>
             <br>
-            <p>
+            <p class = "text">
                 Le siège de cette Société par Actions Simplifiée est situé à Lyon, tout comme le siège de Valeur et Capital.
-                Elle a un effectif de 70 personnes, pour 30 personnes au service développement. 
-
+                Elle a un effectif de 70 personnes, dont 35 personnes dans le service développement.
             </p>
-        </section>
+            <br>
+            <img src="logoCom.png" alt="logo COM&COMPANY" class="center" style="width:500px;height:300px;">
 
-        <section class="our-work">
-            <h3>Collaborateurs informatitiens</h3>
-            <h4></h4>
-            <p>
+            <br><br><br>
+            <div class = "title">
+                <div>
+                    <h3><b>Collaborateurs informatitiens</b></h3>
+                </div>
+            </div>
+            <p class = "text">
                 De nombreux métiers sont présents à COM&COMPANY, répartis selon leur secteur : développement web, infrastructure et réseau et communication.
-                Concernant le développement web, tous les salariés sont des développeurs web, certains sont spécialisés en php, java ou javascript. 
-                <br>
+                Concernant le développement web, tous les salariés sont des développeurs web, certains sont spécialisés en php, java ou javascript.
+            </p>
+            <br>
+            <p class = "text">
                 Il existe différentes équipes pour chaque projet, chacune dirigée par un chef d'équipe lui même développeur.
                 Toutes ces équipes sont gérées par le responsable projet et chef d'équipe.
                 Pour accéder à ces métiers, beaucoup sont passés par des DUT ou BTS informatiques, puis par des licences professionnelles et des masters.
             </p>
-            <br>
-            <h4>Formation continue et processus de veille technologique</h4>
-            <p>
+
+            <br><br><br>
+            <div class = "title">
+                <div>
+                    <h3><b>Formation continue et processus de veille technologique</b></h3>
+                </div>
+            </div>
+            <p class = "text">
                 L'entreprise organise des présentation tous les mois, où un développeur explique à ses collègues une certaine technologie ou fonctionalité. 
                 De plus, ils s'entraident au quotidient et se tiennent informés des solutions trouvées.
             </p>
-            <hr>
+
+            <br><br><br>
+            <div id="projets" class = "title">
+                <h2>Projets</h2>
+                <div>
+                  <h2>Projets</h2>
+                </div>
+            </div>
         </section>
+        
+        <!-- projects page -->
+        <section class = "projects container">
+        
+    
+        <div class = "row">        
+            <div class = "item">
+                <div class = "item-overlay">
+                  <a href = "heracles.html">Maintenance corrective et évolutive</a>
+                  <h3>Héraclès</h3>
+                </div>
+            </div>
 
-
+            <div class = "item">
+                <div class = "item-overlay">
+                <a href = "nike.html">Maintenance corrective et évolutive</a>
+                <h3>Nike</h3>
+                </div>
+            </div>
+    
+            <div class = "item">
+                <div class = "item-overlay">
+                <a href = "harmonie.html">Maintenance corrective et évolutive</a>
+                <h3>Harmonie</h3>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- end of projects page -->
+      
     </body>
 
 </html>
