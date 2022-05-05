@@ -351,6 +351,10 @@ h1, h2, h3, h4, h5, h6, p{
     align-items: center;
     left: -25px;
 }
+.resume .image{
+    display: flex;
+    justify-content: center;
+}
 
 /* #### SERVICES PAGE #### */
 .services{
@@ -542,6 +546,55 @@ h1, h2, h3, h4, h5, h6, p{
     opacity: 0.9;
 }
 
+/* projets */
+.projects .item2{
+    margin: 2rem 0;
+    height: 320px;
+    width: 100%;
+    position: relative;
+}
+.projects .row .item2:nth-child(1){
+    background: url(../images/fleurs.jpg) center/cover no-repeat;
+    opacity: 0.8;
+}
+.projects .row .item2:nth-child(2){
+    background: url(../images/logo-gedimat.jpg) center/cover no-repeat;
+    opacity: 0.8;
+}
+.projects .row .item2:nth-child(3){
+    background: url(../images/resto.jpg) center/cover no-repeat;
+    opacity: 0.8;
+}
+.projects .item2 .item2-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--secondary);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    opacity: 0;
+    transition: var(--transition);
+}
+.projects .item2 .item2-overlay a{
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-family: var(--poppins);
+}
+.projects .item2 .item2-overlay h3{
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 3px;
+}
+.projects .item2:hover .item2-overlay{
+    opacity: 0.9;
+}
+
 /* #### BLOG PAGE #### */
 .blog{
     padding: 5rem 0 2.5rem 0;
@@ -668,91 +721,6 @@ h1, h2, h3, h4, h5, h6, p{
 .contact .contact-social-links a:hover{
     background: var(--secondary);
 }
-.contact-form input, .contact-form textarea{
-    width: 100%;
-    margin: 1rem 0;
-    background: var(--nero);
-    border: 2px solid transparent;
-    font-size: 1rem;
-    padding: 0.8rem 1rem;
-    border-radius: 25px;
-    outline: 0;
-    caret-color: #fff;
-}
-.contact-form input:focus, .contact-form textarea:focus{
-    border-color: var(--secondary);
-}
-.contact-form input::placeholder,
-.contact-form textarea::placeholder{
-    text-transform: uppercase;
-}
-
-
-
-
-/* #### footer #### */
-.footer{
-    padding: 2.5rem 0;
-    border-top: 1.5px solid #252525;
-}
-.footer-title{
-    text-transform: capitalize;
-    font-size: 1.3rem;
-    font-family: var(--poppins);
-    font-weight: 700;
-}
-.footer .col{
-    text-align: center;
-    padding: 1rem 0;
-}
-.footer .col:first-child .text{
-    width: 80%;
-    margin: 0 auto;
-}
-.social-links{
-    display: flex;
-    justify-content: center;
-}
-.social-links a{
-    background: var(--nero);
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    margin: 1.5rem 0.5rem;
-    transition: var(--transition);
-}
-.social-links a:hover{
-    background: var(--secondary);
-}
-.footer-links a{
-    display: block;
-    text-transform: capitalize;
-    padding: 0.2rem 0;
-    transition: var(--transition);
-}
-.footer-links a .fas{
-    display: none;
-}
-.footer-links a:hover{
-    color: #fff;
-}
-.footer .col:last-child div{
-    padding: 0.2rem 0;
-}
-.footer .col:last-child .fas{
-    padding-right: 0.5rem;
-}
-.footer-text .text{
-    text-align: center;
-}
-
-
-
-
 
 
 /* #### Media Queries #### */
